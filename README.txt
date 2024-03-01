@@ -1,10 +1,7 @@
-*** Project 2 ***
-○ Name: Linh Ngoc Le
-○ Course: Data Structures
-○ What helps me to finish this project?
-+ Lab hours
-+ TA hours on Feb 29
+*** Project Library ***
 
-- Question: in the method addResource, after trying over and over, I realised that resources are just really added all if I initialize numLibResource as an
-instance variable instead setting it in the addResource itself. 
-However, in the method public Resource[] getUnavailable(), for example, I can still set the numAvailable resource = 0 right in the method.
+Every class in this assignment, including the Library, are closely related to the Resource class. For resources in the library, we want to include the year of publication, therefore, if the library also had a collection of magazines with many years of issues, it means that the magazines would have many years of publication. 
+From my perspective, in order for this case to work with the algorithm in this assignment, we have to create different magazine version of Resource type, each of them have their own year of publication, so that it can fit the general format for resources. 
+The existing design works pretty well with the organization, access, and preservation matter. It allows us to add endless number of resources, get the number of resources for each categories (books and CDs), also get updated with borrowers and number of available copies. 
+The idea of allowing the library to keep a long-term record of which items a library user has borrowed, even after they have been returned, sounds interesting and beneficial to some extents for the borrowers. First, the library can have individual records of resources, which might help them to form a database to analyze people’s resource of interests and suggest the library users updated resources that they might be interested in. Besides, users can recall their borrowed resources from the past, thus helping them to revisit the resources in case they need them again after a long time. 
+However, this feature might be risky because the database might grow really really big. In this case, the library must have a cloud service that helps to store the data in a long term. This might be unnecessary sometimes as not all users want to revisit the resources. Besides, there might be some information security risks if the library sells their borrowers’ information to the third party without borrowers’ allowance, or the library unintentionally got implicated into privacy breach due to uncontrollable data phishing and pharming. 
